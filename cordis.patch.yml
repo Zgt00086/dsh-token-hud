@@ -1,0 +1,4 @@
+# id: any unique id; name must equal the package.json name
+- insert:
+    - id: local-token-hud
+      name: local-token-hud

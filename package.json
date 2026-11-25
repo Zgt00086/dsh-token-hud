@@ -1,0 +1,70 @@
+{
+  "name": "local-token-hud",
+  "version": "1.2.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "description": "用量与费用：会话 token/费用/速度 + MIKU 中转与官方 DeepSeek 分开记账",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "用量与费用",
+      "en": "Usage & Cost"
+    },
+    "icon": "coin",
+    "contributes": {
+      "composer.strip": [
+        {
+          "id": "strip",
+          "icon": "coin",
+          "panel": "hud"
+        }
+      ],
+      "panels": [
+        {
+          "id": "hud",
+          "title": {
+            "zh": "用量与费用",
+            "en": "Usage & Cost"
+          },
+          "icon": "coin",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        }
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-go",
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "token",
+    "cost",
+    "usage",
+    "miku"
+  ],
+  "license": "MIT",
+  "files": [
+    "lib/index.js",
+    "lib/mod/miku.js",
+    "lib/mod/rate.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zgt00086/dsh-token-hud.git"
+  },
+  "homepage": "https://github.com/Zgt00086/dsh-token-hud#readme"
+}
