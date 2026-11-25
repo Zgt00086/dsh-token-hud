@@ -66,5 +66,8 @@
     "type": "git",
     "url": "git+https://github.com/Zgt00086/dsh-token-hud.git"
   },
-  "homepage": "https://github.com/Zgt00086/dsh-token-hud#readme"
+  "homepage": "https://github.com/Zgt00086/dsh-token-hud#readme",
+  "scripts": {
+    "test": "node --test test/rate.test.mjs"
+  }
 }
